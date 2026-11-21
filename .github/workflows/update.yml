@@ -35,30 +35,42 @@ jobs:
           python atlas/collector.py || echo "::warning::ATLAS 本次采集未成功，保留已有数据"
       - name: 验证数据JSON
         run: python -m json.tool data/dashboard.json >/dev/null
-      - name: 保存采集历史
+      - name: 保存采集历史（处理并发提交）
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/dashboard.json
+          cp data/dashboard.json /tmp/atlas-etf-dashboard.json
           if [ -f atlas/data/overview.json ]; then
-            git add atlas/data/overview.json
+            cp atlas/data/overview.json /tmp/atlas-global-overview.json
           fi
-          if ! git diff --cached --quiet; then
-            git commit -m "data: refresh public ETF"
-            for attempt in 1 2 3 4 5; do
-              git fetch origin main
-              git rebase origin/main
-              if git push origin HEAD:main; then
-                echo "ETF data committed successfully"
-                break
-              fi
-              if [ "$attempt" = 5 ]; then
-                echo "Failed to save collected data after retries" >&2
-                exit 1
-              fi
-              sleep $((attempt * 2))
-            done
-          fi
+          for attempt in 1 2 3 4 5; do
+            # 在最新远程提交上应用两个数据文件，避免 JSON 的 rebase 合并冲突
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p data atlas/data
+            cp /tmp/atlas-etf-dashboard.json data/dashboard.json
+            if [ -f /tmp/atlas-global-overview.json ]; then
+              cp /tmp/atlas-global-overview.json atlas/data/overview.json
+            fi
+            git add data/dashboard.json
+            if [ -f atlas/data/overview.json ]; then
+              git add atlas/data/overview.json
+            fi
+            if git diff --cached --quiet; then
+              echo "No changes to save"
+              break
+            fi
+            git commit -m "data: refresh market snapshots"
+            if git push origin HEAD:main; then
+              echo "Global and ETF snapshots committed"
+              break
+            fi
+            if [ "$attempt" = 5 ]; then
+              echo "Unable to save snapshots after retries" >&2
+              exit 1
+            fi
+            sleep $((attempt * 2))
+          done
       - uses: actions/configure-pages@v5
         with:
           enablement: true
