@@ -1,0 +1,48 @@
+name: ETF数据采集与部署
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '*/30 1-7 * * 1-5'
+    - cron: '45 15 * * 1-5'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: etf-dashboard
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: 采集公开数据
+        run: python collector.py
+      - name: 验证数据JSON
+        run: python -m json.tool data/dashboard.json >/dev/null
+      - name: 保存采集历史
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/dashboard.json
+          if ! git diff --cached --quiet; then git commit -m "data: refresh public ETF"; git push; fi
+      - uses: actions/configure-pages@v5
+      - name: 组装站点
+        run: |
+          mkdir -p public/data
+          cp index.html public/
+          cp data/dashboard.json public/data/
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+      - uses: actions/deploy-pages@v4
+        id: deployment
