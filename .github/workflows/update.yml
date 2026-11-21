@@ -51,6 +51,8 @@ jobs:
             done
           fi
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: 组装站点
         run: |
           mkdir -p public/data
