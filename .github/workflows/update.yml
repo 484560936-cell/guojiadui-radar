@@ -34,7 +34,22 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/dashboard.json
-          if ! git diff --cached --quiet; then git commit -m "data: refresh public ETF"; git push; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh public ETF"
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                echo "ETF data committed successfully"
+                break
+              fi
+              if [ "$attempt" = 5 ]; then
+                echo "Failed to save collected data after retries" >&2
+                exit 1
+              fi
+              sleep $((attempt * 2))
+            done
+          fi
       - uses: actions/configure-pages@v5
       - name: 组装站点
         run: |
