@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "collected_at": "2026-11-23T15:03:47+08:00",
+  "collected_at": "2026-11-23T16:54:19+08:00",
   "errors": [
     "行情获取失败: 502 Server Error: Bad Gateway for url: https://push2delay.eastmoney.com/api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&wbp2u=%7C0%7C0%7C0%",
     "深交所份额获取失败: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
