@@ -1,12 +1,7 @@
 {
   "status": "ok",
-  "collected_at": "2026-11-27T17:20:28+08:00",
+  "collected_at": "2026-11-28T00:15:29+08:00",
   "errors": [
-    "上交所2026-11-26: Expecting value: line 1 column 1 (char 0)",
-    "上交所2026-11-25: Expecting value: line 1 column 1 (char 0)",
-    "上交所2026-11-24: Expecting value: line 1 column 1 (char 0)",
-    "上交所2026-11-23: Expecting value: line 1 column 1 (char 0)",
-    "上交所2026-11-20: Expecting value: line 1 column 1 (char 0)",
     "深交所份额获取失败: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
   ],
   "funds": [
@@ -15,10 +10,10 @@
       "name": "华泰柏瑞沪深300ETF",
       "category": "沪深300",
       "price": 4.162,
-      "shares_100m": 5610288.77,
-      "shares_change_100m": 17820.0,
-      "flow_est_100m": 74166.84,
-      "share_date": "2026-11-26",
+      "shares_100m": 5763738.77,
+      "shares_change_100m": 153450.0,
+      "flow_est_100m": 638658.9,
+      "share_date": "2026-11-27",
       "history": [
         {
           "date": "2026-11-16",
@@ -55,6 +50,10 @@
         {
           "date": "2026-11-26",
           "shares_100m": 5610288.77
+        },
+        {
+          "date": "2026-11-27",
+          "shares_100m": 5763738.77
         }
       ]
     },
@@ -63,10 +62,10 @@
       "name": "易方达沪深300ETF",
       "category": "沪深300",
       "price": 4.042,
-      "shares_100m": 3132424.4,
-      "shares_change_100m": 50400.0,
-      "flow_est_100m": 203716.8,
-      "share_date": "2026-11-26",
+      "shares_100m": 3159874.4,
+      "shares_change_100m": 27450.0,
+      "flow_est_100m": 110952.9,
+      "share_date": "2026-11-27",
       "history": [
         {
           "date": "2026-11-16",
@@ -103,6 +102,10 @@
         {
           "date": "2026-11-26",
           "shares_100m": 3132424.4
+        },
+        {
+          "date": "2026-11-27",
+          "shares_100m": 3159874.4
         }
       ]
     },
@@ -111,10 +114,10 @@
       "name": "华夏沪深300ETF",
       "category": "沪深300",
       "price": 4.335,
-      "shares_100m": 2347584.98,
-      "shares_change_100m": 3780.0,
-      "flow_est_100m": 16386.3,
-      "share_date": "2026-11-26",
+      "shares_100m": 2366934.98,
+      "shares_change_100m": 19350.0,
+      "flow_est_100m": 83882.25,
+      "share_date": "2026-11-27",
       "history": [
         {
           "date": "2026-11-16",
@@ -151,6 +154,10 @@
         {
           "date": "2026-11-26",
           "shares_100m": 2347584.98
+        },
+        {
+          "date": "2026-11-27",
+          "shares_100m": 2366934.98
         }
       ]
     },
@@ -170,10 +177,10 @@
       "name": "华夏上证50ETF",
       "category": "上证50",
       "price": 2.962,
-      "shares_100m": 2544816.68,
-      "shares_change_100m": 3060.0,
-      "flow_est_100m": 9063.72,
-      "share_date": "2026-11-26",
+      "shares_100m": 2559486.68,
+      "shares_change_100m": 14670.0,
+      "flow_est_100m": 43452.54,
+      "share_date": "2026-11-27",
       "history": [
         {
           "date": "2026-11-16",
@@ -210,6 +217,10 @@
         {
           "date": "2026-11-26",
           "shares_100m": 2544816.68
+        },
+        {
+          "date": "2026-11-27",
+          "shares_100m": 2559486.68
         }
       ]
     },
@@ -218,10 +229,10 @@
       "name": "易方达上证50ETF",
       "category": "上证50",
       "price": 2.918,
-      "shares_100m": 94550.68,
-      "shares_change_100m": -540.0,
-      "flow_est_100m": -1575.72,
-      "share_date": "2026-11-26",
+      "shares_100m": 96980.68,
+      "shares_change_100m": 2430.0,
+      "flow_est_100m": 7090.74,
+      "share_date": "2026-11-27",
       "history": [
         {
           "date": "2026-11-16",
@@ -258,6 +269,10 @@
         {
           "date": "2026-11-26",
           "shares_100m": 94550.68
+        },
+        {
+          "date": "2026-11-27",
+          "shares_100m": 96980.68
         }
       ]
     },
@@ -266,10 +281,10 @@
       "name": "南方中证500ETF",
       "category": "中证500",
       "price": 6.404,
-      "shares_100m": 1368616.86,
-      "shares_change_100m": 1640.0,
-      "flow_est_100m": 10502.56,
-      "share_date": "2026-11-26",
+      "shares_100m": 1493536.86,
+      "shares_change_100m": 124920.0,
+      "flow_est_100m": 799987.68,
+      "share_date": "2026-11-27",
       "history": [
         {
           "date": "2026-11-16",
@@ -306,6 +321,10 @@
         {
           "date": "2026-11-26",
           "shares_100m": 1368616.86
+        },
+        {
+          "date": "2026-11-27",
+          "shares_100m": 1493536.86
         }
       ]
     },
@@ -314,10 +333,10 @@
       "name": "华夏中证500ETF",
       "category": "中证500",
       "price": 3.631,
-      "shares_100m": 202560.88,
-      "shares_change_100m": 1760.0,
-      "flow_est_100m": 6390.56,
-      "share_date": "2026-11-26",
+      "shares_100m": 216240.88,
+      "shares_change_100m": 13680.0,
+      "flow_est_100m": 49672.08,
+      "share_date": "2026-11-27",
       "history": [
         {
           "date": "2026-11-16",
@@ -354,6 +373,10 @@
         {
           "date": "2026-11-26",
           "shares_100m": 202560.88
+        },
+        {
+          "date": "2026-11-27",
+          "shares_100m": 216240.88
         }
       ]
     },
@@ -373,10 +396,10 @@
       "name": "南方中证1000ETF",
       "category": "中证1000",
       "price": 2.464,
-      "shares_100m": 2811721.76,
-      "shares_change_100m": 193000.0,
-      "flow_est_100m": 475552.0,
-      "share_date": "2026-11-26",
+      "shares_100m": 3327721.76,
+      "shares_change_100m": 516000.0,
+      "flow_est_100m": 1271424.0,
+      "share_date": "2026-11-27",
       "history": [
         {
           "date": "2026-11-16",
@@ -413,6 +436,10 @@
         {
           "date": "2026-11-26",
           "shares_100m": 2811721.76
+        },
+        {
+          "date": "2026-11-27",
+          "shares_100m": 3327721.76
         }
       ]
     },
@@ -432,10 +459,10 @@
       "name": "华夏科创50ETF",
       "category": "科创50",
       "price": 1.447,
-      "shares_100m": 10551566.82,
-      "shares_change_100m": 18600.0,
-      "flow_est_100m": 26914.2,
-      "share_date": "2026-11-26",
+      "shares_100m": 10307066.82,
+      "shares_change_100m": -244500.0,
+      "flow_est_100m": -353791.5,
+      "share_date": "2026-11-27",
       "history": [
         {
           "date": "2026-11-16",
@@ -472,6 +499,10 @@
         {
           "date": "2026-11-26",
           "shares_100m": 10551566.82
+        },
+        {
+          "date": "2026-11-27",
+          "shares_100m": 10307066.82
         }
       ]
     },
@@ -480,10 +511,10 @@
       "name": "易方达科创50ETF",
       "category": "科创50",
       "price": 1.406,
-      "shares_100m": 5057262.81,
-      "shares_change_100m": 11400.0,
-      "flow_est_100m": 16028.4,
-      "share_date": "2026-11-26",
+      "shares_100m": 5007762.81,
+      "shares_change_100m": -49500.0,
+      "flow_est_100m": -69597.0,
+      "share_date": "2026-11-27",
       "history": [
         {
           "date": "2026-11-16",
@@ -520,6 +551,10 @@
         {
           "date": "2026-11-26",
           "shares_100m": 5057262.81
+        },
+        {
+          "date": "2026-11-27",
+          "shares_100m": 5007762.81
         }
       ]
     },
