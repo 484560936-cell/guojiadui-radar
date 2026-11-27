@@ -1,7 +1,12 @@
 {
   "status": "ok",
-  "collected_at": "2026-11-27T16:20:13+08:00",
+  "collected_at": "2026-11-27T17:20:28+08:00",
   "errors": [
+    "上交所2026-11-26: Expecting value: line 1 column 1 (char 0)",
+    "上交所2026-11-25: Expecting value: line 1 column 1 (char 0)",
+    "上交所2026-11-24: Expecting value: line 1 column 1 (char 0)",
+    "上交所2026-11-23: Expecting value: line 1 column 1 (char 0)",
+    "上交所2026-11-20: Expecting value: line 1 column 1 (char 0)",
     "深交所份额获取失败: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
   ],
   "funds": [
