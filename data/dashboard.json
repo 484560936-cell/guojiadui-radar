@@ -1,8 +1,7 @@
 {
   "status": "ok",
-  "collected_at": "2026-11-27T14:55:31+08:00",
+  "collected_at": "2026-11-27T16:20:13+08:00",
   "errors": [
-    "行情获取失败: HTTPSConnectionPool(host='push2delay.eastmoney.com', port=443): Read timed out. (read timeout=10)",
     "深交所份额获取失败: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
   ],
   "funds": [
@@ -10,10 +9,10 @@
       "code": "510300",
       "name": "华泰柏瑞沪深300ETF",
       "category": "沪深300",
-      "price": null,
+      "price": 4.162,
       "shares_100m": 5610288.77,
       "shares_change_100m": 17820.0,
-      "flow_est_100m": null,
+      "flow_est_100m": 74166.84,
       "share_date": "2026-11-26",
       "history": [
         {
@@ -58,10 +57,10 @@
       "code": "510310",
       "name": "易方达沪深300ETF",
       "category": "沪深300",
-      "price": null,
+      "price": 4.042,
       "shares_100m": 3132424.4,
       "shares_change_100m": 50400.0,
-      "flow_est_100m": null,
+      "flow_est_100m": 203716.8,
       "share_date": "2026-11-26",
       "history": [
         {
@@ -106,10 +105,10 @@
       "code": "510330",
       "name": "华夏沪深300ETF",
       "category": "沪深300",
-      "price": null,
+      "price": 4.335,
       "shares_100m": 2347584.98,
       "shares_change_100m": 3780.0,
-      "flow_est_100m": null,
+      "flow_est_100m": 16386.3,
       "share_date": "2026-11-26",
       "history": [
         {
@@ -154,7 +153,7 @@
       "code": "159919",
       "name": "嘉实沪深300ETF",
       "category": "沪深300",
-      "price": null,
+      "price": 4.343,
       "shares_100m": null,
       "shares_change_100m": null,
       "flow_est_100m": null,
@@ -165,10 +164,10 @@
       "code": "510050",
       "name": "华夏上证50ETF",
       "category": "上证50",
-      "price": null,
+      "price": 2.962,
       "shares_100m": 2544816.68,
       "shares_change_100m": 3060.0,
-      "flow_est_100m": null,
+      "flow_est_100m": 9063.72,
       "share_date": "2026-11-26",
       "history": [
         {
@@ -213,10 +212,10 @@
       "code": "510100",
       "name": "易方达上证50ETF",
       "category": "上证50",
-      "price": null,
+      "price": 2.918,
       "shares_100m": 94550.68,
       "shares_change_100m": -540.0,
-      "flow_est_100m": null,
+      "flow_est_100m": -1575.72,
       "share_date": "2026-11-26",
       "history": [
         {
@@ -261,10 +260,10 @@
       "code": "510500",
       "name": "南方中证500ETF",
       "category": "中证500",
-      "price": null,
+      "price": 6.404,
       "shares_100m": 1368616.86,
       "shares_change_100m": 1640.0,
-      "flow_est_100m": null,
+      "flow_est_100m": 10502.56,
       "share_date": "2026-11-26",
       "history": [
         {
@@ -309,10 +308,10 @@
       "code": "512500",
       "name": "华夏中证500ETF",
       "category": "中证500",
-      "price": null,
+      "price": 3.631,
       "shares_100m": 202560.88,
       "shares_change_100m": 1760.0,
-      "flow_est_100m": null,
+      "flow_est_100m": 6390.56,
       "share_date": "2026-11-26",
       "history": [
         {
@@ -357,7 +356,7 @@
       "code": "159922",
       "name": "嘉实中证500ETF",
       "category": "中证500",
-      "price": null,
+      "price": 2.613,
       "shares_100m": null,
       "shares_change_100m": null,
       "flow_est_100m": null,
@@ -368,10 +367,10 @@
       "code": "512100",
       "name": "南方中证1000ETF",
       "category": "中证1000",
-      "price": null,
+      "price": 2.464,
       "shares_100m": 2811721.76,
       "shares_change_100m": 193000.0,
-      "flow_est_100m": null,
+      "flow_est_100m": 475552.0,
       "share_date": "2026-11-26",
       "history": [
         {
@@ -416,7 +415,7 @@
       "code": "159845",
       "name": "华夏中证1000ETF",
       "category": "中证1000",
-      "price": null,
+      "price": 2.526,
       "shares_100m": null,
       "shares_change_100m": null,
       "flow_est_100m": null,
@@ -427,10 +426,10 @@
       "code": "588000",
       "name": "华夏科创50ETF",
       "category": "科创50",
-      "price": null,
+      "price": 1.447,
       "shares_100m": 10551566.82,
       "shares_change_100m": 18600.0,
-      "flow_est_100m": null,
+      "flow_est_100m": 26914.2,
       "share_date": "2026-11-26",
       "history": [
         {
@@ -475,10 +474,10 @@
       "code": "588080",
       "name": "易方达科创50ETF",
       "category": "科创50",
-      "price": null,
+      "price": 1.406,
       "shares_100m": 5057262.81,
       "shares_change_100m": 11400.0,
-      "flow_est_100m": null,
+      "flow_est_100m": 16028.4,
       "share_date": "2026-11-26",
       "history": [
         {
@@ -523,7 +522,7 @@
       "code": "159915",
       "name": "易方达创业板ETF",
       "category": "创业板",
-      "price": null,
+      "price": 2.471,
       "shares_100m": null,
       "shares_change_100m": null,
       "flow_est_100m": null,
@@ -534,7 +533,7 @@
       "code": "159949",
       "name": "华安创业板50ETF",
       "category": "创业板",
-      "price": null,
+      "price": 1.108,
       "shares_100m": null,
       "shares_change_100m": null,
       "flow_est_100m": null,
